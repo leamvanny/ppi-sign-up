@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preah Kossomak Polytechnic Institute</title>
+    <link rel="stylesheet" href="/CSS/registerppi.css">
+    <script src="/JQuery Library/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-img">
+            <img src="/Images/front-of-ppi.jpeg" class="img-front-ppi">
+        </div>
+        <div class="txt-head">
+            <h2>សូមស្វាគមន៍មកកាន់វិទ្យាស្ថានពហុបច្ចេកទេសព្រះកុសុមៈ</h2>
+        </div>
+        <div class="course-content">
+            <div class="head-title">
+                <p class="txt-course">សូមចុះឈ្មោះ និងជ្រើសរើសវគ្គសិក្សារបស់អ្នក</p>
+                <div class="btn-course">
+                    <button class="long-course">វគ្គសិក្សារយៈពេលវែង</button>
+                    <button class="short-course">វគ្គសិក្សារយៈពេលខ្លី</button>
+                </div>
+            </div>
+
+            <form name="myCourse" class="long-registration" id="btn-l-course">
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            <h3 class="txt-regis">ចុះឈ្មោះចូលរៀន</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <img src="/Images/1.png" class="regis-logo">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="note-required">
+                                <strong>ចំណាំ</strong>: លោកអាចធ្វើការបញ្ចូលទិន្នន័យជាភាសាអង់គ្លេសបានផងដែរ។
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">នាមត្រកូល </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="text" id="first-name" required placeholder="លៀម">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">នាមខ្លួន </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="text" id="last-name" required placeholder="វណ្នី">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">ថ្ងៃខែឆ្នាំកំណើត </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="date" id="age" required >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">អាយុ </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="number" id="age" required placeholder="២០">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">ភេទ </p>
+                        </td>
+                        <td>
+                            <span>:</span><select name="gender" id="sex" class="opt" required>
+                                <option value="">ជ្រើសរើសភេទរបស់អ្នក</option>
+                                <option value="sexval1">ប្រុស</option>
+                                <option value="sexval2">ស្រី</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">អាស័យដ្ឋាន </p>
+                        </td>
+                        <td>
+                            <span></span><textarea id="address" cols="6" rows="4" placeholder="ផ្លូវលេខ ១៩២, សង្កាត់ទឹកល្អក់៣, ខណ្ឌទូលគោក, រាជធានីភ្នំពេញ" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">លេខទូរស័ព្ទ </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="number" id="phone" required placeholder="០៩៦៣២៨២០១០">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">អ៊ីម៉ែល </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="email" id="email" required placeholder="vanny.leam2004@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">វគ្គសិក្សា </p> 
+                        </td>
+                        <td>
+                            <span>:</span><select name="departementCourse" id="departcourse" class="opt" required>
+                                <option value="">ជ្រើសរើសជំនាញរបស់អ្នក</option>
+                                <option value="lval1">ព័ត៌មានវិទ្យា</option>
+                                <option value="lval2">អគ្គិសនី</option>
+                                <option value="lval3">វិស្វករ</option>
+                                <option value="lval4">អេឡិចត្រូនិក</option>
+                                <option value="lval4">គណនេណ្យ</option>
+                                <option value="lval5">គ្រប់គ្រង</option>
+                                <option value="lval6">ម៉ាឃិតធីង</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">វេនសិក្សា </p>
+                        </td>
+                        <td>
+                            <span>:</span><select name="studyShift" id="sex" class="opt" required>
+                                <option value="">ជ្រើសរើសភេទរបស់អ្នក</option>
+                                <option value="studyshift1">វេនព្រឹក ៖ ម៉ោង ៧ : ០០ ដល់ ១២ : ០០</option>
+                                <option value="studyshift2">វេនរសៀល ៖ ម៉ោង ១ : ៣០ ដល់ ៥ : ០០</option>
+                                <option value="studyshift3">វេនយប់ ៖ ម៉ោង ៥ : ៣០ ដល់ ៨ : ៣០</option>
+                                <option value="studyshift4">វេនថ្ងៃសៅរ៍-អាទិត្យ ៖ សិក្សាពេលព្រឹក និងថ្ងៃ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btn" colspan="2">
+                            <button type="submit" class="btn-submith">ដាក់បញ្ចូល</button>
+                            <button type="reset" class="btn-cancel">បោះបង់</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form name="myCourse" class="short-registration">
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            <h3 class="txt-regis">ចុះឈ្មោះចូលរៀន</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <img src="/Images/1.png" class="regis-logo">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="note-required">
+                                <strong>ចំណាំ</strong>: លោកអាចធ្វើការបញ្ចូលទិន្នន័យជាភាសាអង់គ្លេសបានផងដែរ។
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">នាមត្រកូល </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="text" id="first-name" required placeholder="លៀម">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">នាមខ្លួន </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="text" id="last-name" required placeholder="វណ្នី">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">ថ្ងៃខែឆ្នាំកំណើត </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="date" id="age" required >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">អាយុ </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="number" id="age" required placeholder="២០">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">ភេទ </p>
+                        </td>
+                        <td>
+                            <span>:</span><select name="gender" id="sex" class="opt" required>
+                                <option value="">ជ្រើសរើសភេទរបស់អ្នក</option>
+                                <option value="sexval1">ប្រុស</option>
+                                <option value="sexval2">ស្រី</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">អាស័យដ្ឋាន </p>
+                        </td>
+                        <td>
+                            <span></span><textarea id="address" cols="6" rows="4" placeholder="ផ្លូវលេខ ១៩២, សង្កាត់ទឹកល្អក់៣, ខណ្ឌទូលគោក, រាជធានីភ្នំពេញ" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">លេខទូរស័ព្ទ </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="number" id="phone" required placeholder="0963282010">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">អ៊ីម៉ែល </p>
+                        </td>
+                        <td>
+                            <span>:</span><input type="email" id="email" required placeholder="vanny.leam2004@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">វគ្គសិក្សា </p> 
+                        </td>
+                        <td>
+                            <span>:</span><select name="departementCourse" id="s-course" class="opt" required>
+                                <option value="">ជ្រើសរើសជំនាញរបស់អ្នក</option>
+                                <option value="sval1">ការដំឡើងបណ្ដាញអគ្គិសនីអគារ</option>
+                                <option value="sval2">សេវាកម្មបរិក្ខាត្រជាក់ក្នុគេហដ្ឋាន</option>
+                                <option value="sval3">ការដំឡើងបណ្ដាញបំពង់ទឹក</option>
+                                <option value="sval4">ការដំឡើយប្រព័ន្ធបញ្ជាម៉ូទ័រអគ្គិសនី</option>
+                                <option value="sval4">ការថែទាំ និងជុសជល់ម៉ូទ័រអគ្គិសនី</option>
+                                <option value="sval5">ការដំឡើង និងថែទាំកាមេរ៉ាសុវត្ថិភាព</option>
+                                <option value="sval6">ការថែទាំ និងជុសជល់បរិក្ខាអេឡិចត្រូនិច</option>
+                                <option value="sval7">ការរចនាក្រាហ្វិកកុំព្យូទ័រ</option>
+                                <option value="sval8">ការថែទាំ និងជុសជល់បរិក្ខាអេឡិចត្រូនិច</option>
+                                <option value="sval9">ការងារកំបោរ</option>
+                                <option value="sval10">ការដំឡើងពុម្ព</option>
+                                <option value="sval11">ការដំឡើងសរសៃដែក</option>
+                                <option value="sval12">ការងារការ៉ូ</option>
+                                <option value="sval13">សេវាកម្មអតិថិជន</option>
+                                <option value="sval14">សេវាកម្មកុំព្យូទ័រ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="card">វេនសិក្សា </p>
+                        </td>
+                        <td>
+                            <span>:</span><select name="studyShift" id="sex" class="opt" required>
+                                <option value="">ជ្រើសរើសភេទរបស់អ្នក</option>
+                                <option value="studyshift1">វេនព្រឹក ៖ ម៉ោង ៧ : ៣០ ដល់ ១១ : ៣០</option>
+                                <option value="studyshift2">វេនរសៀល ៖ ម៉ោង ១៤ : ០០ ដល់ ១៧ : ០០</option>
+                                <option value="studyshift3">វេនយប់ ៖ ម៉ោង ១៧ : ៣០ ដល់ ២០ : ៣០</option>
+                                <option value="studyshift4">វេនថ្ងៃសៅរ៍-អាទិត្យ ៖ សិក្សាពេលព្រឹក និងថ្ងៃ</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btn" colspan="2">
+                            <button type="submit" class="btn-submith">ដាក់បញ្ចូល</button>
+                            <button type="reset" class="btn-cancel">បោះបង់</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">
+                All Rights Reserved Copyright @2024 Preah Kossomak Polytechnic Institute.
+            </p>
+            <p class="addr-info">
+                ផ្លូវសហព័ន្ធរ៉ុស្សី សង្កាត់ទឺកថ្លា ខ័ណ្ឌសែនសុខ រាជធានីភ្នំពេញ
+            </p>
+        </div>
+    </footer>
+    
+    <script src="/Javascript/registerppi.js"></script>
+    <script src="/Javascript/main.js"></script>
+</body>
+</html>
